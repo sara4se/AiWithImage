@@ -15,6 +15,12 @@
 		5663F9D72A250DB10054AD54 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5663F9D62A250DB10054AD54 /* MobileNetV2.mlmodel */; };
 		5663F9D92A250E8A0054AD54 /* ImageClassfier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5663F9D82A250E8A0054AD54 /* ImageClassfier.swift */; };
 		5663F9DB2A2527BC0054AD54 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5663F9DA2A2527BC0054AD54 /* Resnet50.mlmodel */; };
+		5674BD672A2FA9540022051A /* w.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5674BD662A2FA9530022051A /* w.swift */; };
+		5674BD8D2A31F8470022051A /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5674BD8B2A31F8460022051A /* VideoCapture.swift */; };
+		5674BD8E2A31F8470022051A /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5674BD8C2A31F8460022051A /* CircleImage.swift */; };
+		5674BD902A31FBD20022051A /* LiveImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5674BD8F2A31FBD20022051A /* LiveImageViewController.swift */; };
+		5674BD922A3205870022051A /* VideoClassfier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5674BD912A3205870022051A /* VideoClassfier.swift */; };
+		5674BD972A3205FE0022051A /* Onboearding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5674BD962A3205FE0022051A /* Onboearding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +33,12 @@
 		5663F9D62A250DB10054AD54 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 		5663F9D82A250E8A0054AD54 /* ImageClassfier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassfier.swift; sourceTree = "<group>"; };
 		5663F9DA2A2527BC0054AD54 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		5674BD662A2FA9530022051A /* w.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = w.swift; sourceTree = "<group>"; };
+		5674BD8B2A31F8460022051A /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		5674BD8C2A31F8460022051A /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		5674BD8F2A31FBD20022051A /* LiveImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveImageViewController.swift; sourceTree = "<group>"; };
+		5674BD912A3205870022051A /* VideoClassfier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoClassfier.swift; sourceTree = "<group>"; };
+		5674BD962A3205FE0022051A /* Onboearding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboearding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +71,12 @@
 		5663F9C52A24F9E30054AD54 /* AItTestImageTWQ */ = {
 			isa = PBXGroup;
 			children = (
-				5663F9DA2A2527BC0054AD54 /* Resnet50.mlmodel */,
-				5663F9D62A250DB10054AD54 /* MobileNetV2.mlmodel */,
-				5663F9D42A24FA300054AD54 /* ImagePicker.swift */,
-				5663F9D82A250E8A0054AD54 /* ImageClassfier.swift */,
+				5674BD8A2A31F8460022051A /* Supporting Views */,
+				5674BD982A3206070022051A /* Controllers */,
+				5674BD952A3205D20022051A /* Views */,
+				5674BD942A3205B50022051A /* Models */,
+				5674BD932A32059B0022051A /* Classfiers */,
 				5663F9C62A24F9E30054AD54 /* AItTestImageTWQApp.swift */,
-				5663F9C82A24F9E30054AD54 /* ContentView.swift */,
 				5663F9CA2A24F9E60054AD54 /* Assets.xcassets */,
 				5663F9CC2A24F9E60054AD54 /* Preview Content */,
 			);
@@ -77,6 +89,52 @@
 				5663F9CD2A24F9E60054AD54 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5674BD8A2A31F8460022051A /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				5663F9D42A24FA300054AD54 /* ImagePicker.swift */,
+				5674BD8B2A31F8460022051A /* VideoCapture.swift */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+		5674BD932A32059B0022051A /* Classfiers */ = {
+			isa = PBXGroup;
+			children = (
+				5663F9D82A250E8A0054AD54 /* ImageClassfier.swift */,
+				5674BD912A3205870022051A /* VideoClassfier.swift */,
+			);
+			path = Classfiers;
+			sourceTree = "<group>";
+		};
+		5674BD942A3205B50022051A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5663F9DA2A2527BC0054AD54 /* Resnet50.mlmodel */,
+				5663F9D62A250DB10054AD54 /* MobileNetV2.mlmodel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5674BD952A3205D20022051A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5674BD8C2A31F8460022051A /* CircleImage.swift */,
+				5663F9C82A24F9E30054AD54 /* ContentView.swift */,
+				5674BD662A2FA9530022051A /* w.swift */,
+				5674BD962A3205FE0022051A /* Onboearding.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5674BD982A3206070022051A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5674BD8F2A31FBD20022051A /* LiveImageViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +207,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5674BD8D2A31F8470022051A /* VideoCapture.swift in Sources */,
+				5674BD672A2FA9540022051A /* w.swift in Sources */,
+				5674BD922A3205870022051A /* VideoClassfier.swift in Sources */,
+				5674BD902A31FBD20022051A /* LiveImageViewController.swift in Sources */,
 				5663F9D52A24FA300054AD54 /* ImagePicker.swift in Sources */,
 				5663F9C92A24F9E30054AD54 /* ContentView.swift in Sources */,
 				5663F9D72A250DB10054AD54 /* MobileNetV2.mlmodel in Sources */,
+				5674BD8E2A31F8470022051A /* CircleImage.swift in Sources */,
+				5674BD972A3205FE0022051A /* Onboearding.swift in Sources */,
 				5663F9C72A24F9E30054AD54 /* AItTestImageTWQApp.swift in Sources */,
 				5663F9DB2A2527BC0054AD54 /* Resnet50.mlmodel in Sources */,
 				5663F9D92A250E8A0054AD54 /* ImageClassfier.swift in Sources */,
